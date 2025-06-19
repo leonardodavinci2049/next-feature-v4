@@ -1,8 +1,8 @@
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="">
-      <h1>New Project Next 15</h1>
+      <h1>Home Page</h1>
     </div>
   );
 }
