@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import "./globals.css";
 
 import { useState } from "react";
@@ -17,13 +18,14 @@ const ErrorSimulator = ({
   if (error) throw new Error(message);
 
   return (
-    <button
+    <Button
       title="Simulate an error"
-      className="bg-red-950 text-red-500 rounded p-1 leading-none font-semibold text-sm hover:bg-red-900 transition"
+      className="mx-20 my-4 "
       onClick={() => setError(true)}
+      variant={"destructive"}
     >
       Simulate Error
-    </button>
+    </Button>
   );
 };
 
