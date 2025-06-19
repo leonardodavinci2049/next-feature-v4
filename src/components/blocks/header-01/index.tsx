@@ -14,9 +14,10 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 const TopMenu = [
-  { name: "Features", href: "#features" },
-  { name: "Pricing", href: "#pricing" },
-  { name: "FAQ", href: "#faq" },
+  { name: "Artigos", href: "/articles" },
+  { name: "Produtos", href: "/products" },
+  { name: "Marketing", href: "/marketing" },
+  { name: "Login", href: "/login" },
 ];
 
 export default function Header01() {
