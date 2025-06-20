@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 import Header01 from "@/components/blocks/header-01";
 
 import ErrorTestButton from "./error-test-button";
-import { ErrorWrapper } from "./error-wrapper";
+//import { ErrorWrapper } from "./error-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,7 +50,9 @@ export default function RootLayout({
           )}
 
           <div className="container mx-auto px-4 py-12">
-            <ErrorWrapper>{children}</ErrorWrapper>
+            {/* <ErrorWrapper> */}
+              {children}
+              {/* </ErrorWrapper> */}
           </div>
         </ThemeProvider>
       </body>
