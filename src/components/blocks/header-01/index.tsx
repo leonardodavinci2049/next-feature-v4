@@ -14,6 +14,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 const TopMenu = [
+ { name: "Dashboard", href: "/dashboard" },
   { name: "Artigos", href: "/articles" },
   { name: "Produtos", href: "/products" },
   { name: "Marketing", href: "/marketing" },

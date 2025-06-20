@@ -4,8 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Header01 from "@/components/blocks/header-01";
 
-import ErrorTestButton from "./error-test-button";
-//import { ErrorWrapper } from "./error-wrapper";
+//import ErrorTestButton from "./error-test-button";
+// import { ErrorWrapper } from "./error-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,19 +40,12 @@ export default function RootLayout({
         >
           <Header01 />
 
-          {/* Botão de teste para erros - apenas em desenvolvimento */}
-          {process.env.NODE_ENV === "development" && (
-            <div className="bg-red-50 border-b border-red-200 p-2">
-              <div className="container mx-auto px-4 flex justify-center">
-                <ErrorTestButton />
-              </div>
-            </div>
-          )}
+
 
           <div className="container mx-auto px-4 py-12">
             {/* <ErrorWrapper> */}
-              {children}
-              {/* </ErrorWrapper> */}
+            {children}
+            {/* </ErrorWrapper> */}
           </div>
         </ThemeProvider>
       </body>
